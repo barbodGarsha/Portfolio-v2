@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="223" height="223" viewBox="0 0 223 223">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="223" height="223" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_2" data-name="Group 2" transform="translate(-673.5 -243.5)">
+    <g id="Repeat_Grid_1" data-name="Repeat Grid 1" transform="translate(673.5 243.5)" clip-path="url(#clip-path)">
+      <g transform="translate(-673.5 -243.5)">
+        <line id="Line_1" data-name="Line 1" y2="223" transform="translate(674.5 243.5)" fill="none" stroke="#a46ca4" stroke-width="2" stroke-dasharray="15"/>
+      </g>
+      <g transform="translate(-651.5 -243.5)">
+        <line id="Line_1-2" data-name="Line 1" y2="223" transform="translate(674.5 243.5)" fill="none" stroke="#a46ca4" stroke-width="2" stroke-dasharray="15"/>
+      </g>
+      <g transform="translate(-629.5 -243.5)">
+        <line id="Line_1-3" data-name="Line 1" y2="223" transform="translate(674.5 243.5)" fill="none" stroke="#a46ca4" stroke-width="2" stroke-dasharray="15"/>
+      </g>
+      <g transform="translate(-607.5 -243.5)">
+        <line id="Line_1-4" data-name="Line 1" y2="223" transform="translate(674.5 243.5)" fill="none" stroke="#a46ca4" stroke-width="2" stroke-dasharray="15"/>
+      </g>
+      <g transform="translate(-585.5 -243.5)">
+        <line id="Line_1-5" data-name="Line 1" y2="223" transform="translate(674.5 243.5)" fill="none" stroke="#a46ca4" stroke-width="2" stroke-dasharray="15"/>
+      </g>
+      <g transform="translate(-563.5 -243.5)">
+        <line id="Line_1-6" data-name="Line 1" y2="223" transform="translate(674.5 243.5)" fill="none" stroke="#a46ca4" stroke-width="2" stroke-dasharray="15"/>
+      </g>
+      <g transform="translate(-541.5 -243.5)">
+        <line id="Line_1-7" data-name="Line 1" y2="223" transform="translate(674.5 243.5)" fill="none" stroke="#a46ca4" stroke-width="2" stroke-dasharray="15"/>
+      </g>
+      <g transform="translate(-519.5 -243.5)">
+        <line id="Line_1-8" data-name="Line 1" y2="223" transform="translate(674.5 243.5)" fill="none" stroke="#a46ca4" stroke-width="2" stroke-dasharray="15"/>
+      </g>
+      <g transform="translate(-497.5 -243.5)">
+        <line id="Line_1-9" data-name="Line 1" y2="223" transform="translate(674.5 243.5)" fill="none" stroke="#a46ca4" stroke-width="2" stroke-dasharray="15"/>
+      </g>
+      <g transform="translate(-475.5 -243.5)">
+        <line id="Line_1-10" data-name="Line 1" y2="223" transform="translate(674.5 243.5)" fill="none" stroke="#a46ca4" stroke-width="2" stroke-dasharray="15"/>
+      </g>
+      <g transform="translate(-453.5 -243.5)">
+        <line id="Line_1-11" data-name="Line 1" y2="223" transform="translate(674.5 243.5)" fill="none" stroke="#a46ca4" stroke-width="2" stroke-dasharray="15"/>
+      </g>
+    </g>
+  </g>
+</svg>

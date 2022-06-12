@@ -147,9 +147,11 @@ li {
 
 
 .workflow {   
+    overflow: hidden;
     background-color: $c-neutral-500;
     
     .workflow__container {  
+        position: relative;
         height: 70vh; 
         padding: 0rem 4rem;
         display: flex;
@@ -209,5 +211,20 @@ li {
                 }
             }
         }
+
+        .workflow__design-lines {
+            position: absolute;
+            top: -4.8rem;
+            left: -4.8rem;
+            width: 11rem;
+        }
+    }
+}
+
+.projects {
+    background-color: $c-neutral-var-500;
+    .projects__container {
+        padding: 4rem;
+        padding-right: 0;
     }
 }

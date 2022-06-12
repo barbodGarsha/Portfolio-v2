@@ -178,10 +178,12 @@ li {
 }
 
 .workflow {
+  overflow: hidden;
   background-color: #FFFBFB;
 }
 
 .workflow .workflow__container {
+  position: relative;
   height: 70vh;
   padding: 0rem 4rem;
   display: -webkit-box;
@@ -268,5 +270,21 @@ li {
   right: -.7rem;
   background-color: #F67280;
   z-index: 1;
+}
+
+.workflow .workflow__container .workflow__design-lines {
+  position: absolute;
+  top: -4.8rem;
+  left: -4.8rem;
+  width: 11rem;
+}
+
+.projects {
+  background-color: #F1EFEC;
+}
+
+.projects .projects__container {
+  padding: 4rem;
+  padding-right: 0;
 }
 /*# sourceMappingURL=main.css.map */
