@@ -1,0 +1,213 @@
+@import './pallete-generator.scss';
+
+//RESETS
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+a, li, h1, h2, p {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+}
+
+ul {
+    display: inline;  
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+//
+
+.button {
+    cursor: pointer;
+    border: 1px $c-secondary-500 solid;
+    border-radius: 8px;
+    padding: .4rem .8rem;
+    .button__txt {
+        color: $c-secondary-500;
+    }
+}
+.button:hover {
+    background-color: $c-secondary-500;
+    .button__txt {
+        color: $c-neutral-var-500;
+    }
+}
+
+.header {
+   
+    background-color: $c-neutral-var-500;
+    
+    .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 4rem;
+    }
+    .header__logo {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $c-primary-var-500;
+        .header__logo--accent-color {
+            color: $c-secondary-500;
+        }
+    }
+
+}
+
+.title {
+    position: relative;
+    .title__underline {
+        position: absolute;
+        bottom: -0.5rem;
+        left: -10rem;
+        width: 18rem;
+        height: 2px;
+    }
+    .title__txt {
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    margin-bottom: 1rem;
+}
+.title--primary {
+    color: $c-primary-500;
+    .title__underline {
+        background-color: $c-secondary-var-500;
+    }
+}
+.title--primary-var {
+    color: $c-primary-var-500;
+    .title__underline {
+        background-color: $c-secondary-500;
+    }
+}
+
+.hero {   
+    background-color: $c-primary-var-500;
+    
+    .hero__container {  
+        height: 70vh; 
+        padding: 0rem 4rem;
+        display: flex;
+        align-items: center;
+        .hero__content {
+            flex: 1;
+            .hero__content__txt {
+                color: $c-primary-500;
+            }
+        }
+
+        .hero__design {
+            transform: translateX(-1rem);
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+            align-items: center;
+
+            .hero__design__img-container {
+                display: flex;
+                position: relative;
+            }
+            .hero__design__img {
+                position: relative;
+                width: 100%;
+                z-index: 2;
+            }
+            
+            .hero__design__img-shadow {
+                width: 100%;
+                height: 100%;
+                background-color: $c-secondary-500;
+                position: absolute;
+                bottom: -.7rem;
+                right: -.7rem;
+                z-index: 1;
+            }
+
+            .hero__design-lines {
+                position: absolute;
+                width: 30%;
+                left: -1.2rem;
+                top: -1rem;
+            }
+        }
+    }
+}
+
+
+.workflow {   
+    background-color: $c-neutral-500;
+    
+    .workflow__container {  
+        height: 70vh; 
+        padding: 0rem 4rem;
+        display: flex;
+        align-items: center;
+        .workflow__content {
+            flex: 1;
+            .workflow__content__txt {
+                color: $c-primary-var-500;
+            }
+        }
+
+        .workflow__design {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .workflow__design__container {
+                position: relative;
+                width: 80%;
+                
+                transform: translateX(3.5rem);
+                .workflow__design-row {
+                    padding: 3rem 4rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .workflow__design-row__item {
+                        color: $c-primary-500;
+                        font-size: 1.2rem;
+                    }
+                    .workflow__design-row__item--color-secondary {
+                        color: $c-secondary-500;
+                    } 
+                    .workflow__design-row__item--color-secondary-var {
+                        color: $c-secondary-var-500;
+                    }
+                }
+
+                .workflow__design-background {
+                    width: 120%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: $c-primary-var-500;
+                    z-index: 2;
+                }
+                .workflow__design-shadow {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    bottom: -.7rem;
+                    right: -.7rem;
+                    background-color: $c-secondary-500;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}

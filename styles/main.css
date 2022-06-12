@@ -1,0 +1,272 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a, li, h1, h2, p {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  cursor: pointer;
+  border: 1px #F67280 solid;
+  border-radius: 8px;
+  padding: .4rem .8rem;
+}
+
+.button .button__txt {
+  color: #F67280;
+}
+
+.button:hover {
+  background-color: #F67280;
+}
+
+.button:hover .button__txt {
+  color: #F1EFEC;
+}
+
+.header {
+  background-color: #F1EFEC;
+}
+
+.header .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 4rem;
+}
+
+.header .header__logo {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #201D20;
+}
+
+.header .header__logo .header__logo--accent-color {
+  color: #F67280;
+}
+
+.title {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.title .title__underline {
+  position: absolute;
+  bottom: -0.5rem;
+  left: -10rem;
+  width: 18rem;
+  height: 2px;
+}
+
+.title .title__txt {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.title--primary {
+  color: #F8B195;
+}
+
+.title--primary .title__underline {
+  background-color: #A46CA4;
+}
+
+.title--primary-var {
+  color: #201D20;
+}
+
+.title--primary-var .title__underline {
+  background-color: #F67280;
+}
+
+.hero {
+  background-color: #201D20;
+}
+
+.hero .hero__container {
+  height: 70vh;
+  padding: 0rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero__container .hero__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.hero .hero__container .hero__content .hero__content__txt {
+  color: #F8B195;
+}
+
+.hero .hero__container .hero__design {
+  -webkit-transform: translateX(-1rem);
+          transform: translateX(-1rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .hero__container .hero__design .hero__design__img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.hero .hero__container .hero__design .hero__design__img {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+
+.hero .hero__container .hero__design .hero__design__img-shadow {
+  width: 100%;
+  height: 100%;
+  background-color: #F67280;
+  position: absolute;
+  bottom: -.7rem;
+  right: -.7rem;
+  z-index: 1;
+}
+
+.hero .hero__container .hero__design .hero__design-lines {
+  position: absolute;
+  width: 30%;
+  left: -1.2rem;
+  top: -1rem;
+}
+
+.workflow {
+  background-color: #FFFBFB;
+}
+
+.workflow .workflow__container {
+  height: 70vh;
+  padding: 0rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.workflow .workflow__container .workflow__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.workflow .workflow__container .workflow__content .workflow__content__txt {
+  color: #201D20;
+}
+
+.workflow .workflow__container .workflow__design {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.workflow .workflow__container .workflow__design .workflow__design__container {
+  position: relative;
+  width: 80%;
+  -webkit-transform: translateX(3.5rem);
+          transform: translateX(3.5rem);
+}
+
+.workflow .workflow__container .workflow__design .workflow__design__container .workflow__design-row {
+  padding: 3rem 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.workflow .workflow__container .workflow__design .workflow__design__container .workflow__design-row .workflow__design-row__item {
+  color: #F8B195;
+  font-size: 1.2rem;
+}
+
+.workflow .workflow__container .workflow__design .workflow__design__container .workflow__design-row .workflow__design-row__item--color-secondary {
+  color: #F67280;
+}
+
+.workflow .workflow__container .workflow__design .workflow__design__container .workflow__design-row .workflow__design-row__item--color-secondary-var {
+  color: #A46CA4;
+}
+
+.workflow .workflow__container .workflow__design .workflow__design__container .workflow__design-background {
+  width: 120%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #201D20;
+  z-index: 2;
+}
+
+.workflow .workflow__container .workflow__design .workflow__design__container .workflow__design-shadow {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -.7rem;
+  right: -.7rem;
+  background-color: #F67280;
+  z-index: 1;
+}
+/*# sourceMappingURL=main.css.map */
