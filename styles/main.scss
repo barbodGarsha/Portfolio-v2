@@ -221,10 +221,76 @@ li {
     }
 }
 
-.projects {
+.my_projects {
     background-color: $c-neutral-var-500;
-    .projects__container {
+    .my_projects__container {
         padding: 4rem;
         padding-right: 0;
+    }
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    
+    .project__content {
+        padding: 1rem 0;
+        padding-right: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .project__skills {
+        display: block;
+        width: 100%;
+
+    }
+
+    .project__title {
+        color: $c-secondary-500;
+        margin-bottom: .5rem;
+    }
+
+    .project__info {
+        color: $c-primary-var-500;
+        margin-bottom: .5rem;
+    }
+
+    .project__note
+    {
+        color: rgba($color: $c-primary-var-500, $alpha: .6)
+    }
+    .project__photo {
+        position: relative;
+        .project__img {
+            width: 37vw;
+            transition: 200ms;
+        }
+       
+    }
+
+    .project__photo:hover {
+        .project__img {
+            transform: scale(110%) translateX(-5%);
+        }
+    }
+}
+
+.tag {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: rgba($color: $c-primary-var-500, $alpha: .2);
+    padding: .3rem .7rem;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    .tag__txt {
+        display: inline;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: $c-primary-var-500;
     }
 }
