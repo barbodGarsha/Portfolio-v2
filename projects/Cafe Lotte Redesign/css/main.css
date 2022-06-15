@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --dark-color: #273364;
+  --primary-color: #C89AB0;
+  --secondary-color: #B15C6C;
+  --light-color: #F8BC6A;
+  --lightest-color: #EEF0DE;
+  --white-space-em: 7.5em;
+}
+
+body {
+  background-color: var(--lightest-color);
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a, li, h1, h2, p {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: var(--dark-color);
+  width: 100%;
+}
+
+.navbar a {
+  color: var(--primary-color);
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em var(--white-space-em);
+}
+
+.navbar .container .logo {
+  height: 2.5em;
+  margin-right: var(--white-space-em);
+}
+
+.navbar .container .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .container li {
+  margin-right: 2.5em;
+}
+
+.navbar .container a {
+  font-size: 1.5em;
+}
+
+.navbar .container a:hover {
+  color: var(--lightest-color);
+}
+
+.navbar .container .book-a-table {
+  font-weight: bold;
+}
+
+.hero {
+  background: url(../images/Hero-Background-Demo.jpg) no-repeat fixed;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .container {
+  padding-left: var(--white-space-em);
+  padding-right: 8em;
+  background-color: var(--dark-color);
+  opacity: .9;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero h1 {
+  color: var(--light-color);
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  background-color: var(--dark-color);
+  opacity: .4;
+}
+
+.about-us .container {
+  padding: 0em var(--white-space-em);
+  padding-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-us .container .info {
+  width: 50%;
+}
+
+.about-us .container .info .details {
+  color: var(--secondary-color);
+  font-size: 1.1em;
+  padding-right: 3em;
+  padding-top: 3em;
+}
+
+.about-us .container .map-cta {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us .container .map-cta iframe {
+  padding: 3em;
+}
+
+.about-us .container .subhead {
+  color: var(--dark-color);
+  font-size: 1em;
+}
+
+.about-us .hinweis-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.about-us .hinweis-cta p {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.footer {
+  background-color: var(--dark-color);
+}
+
+.footer .container {
+  padding: 2em var(--white-space-em);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .contacts {
+  margin-right: var(--white-space-em);
+}
+
+.footer .opening-hours-cta .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer .opening-hours-cta .info .days {
+  margin-right: 3.2em;
+}
+
+.footer p {
+  color: var(--light-color);
+  margin-bottom: .1sem;
+}
+
+.footer h2 {
+  color: var(--primary-color);
+  font-size: 1em;
+  margin-bottom: .5em;
+}
+
+@media only screen and (max-width: 1260px) {
+  body {
+    font-size: .9rem;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  :root {
+    --white-space-em: 4em;
+  }
+  body {
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 795px) {
+  .about-us .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-us .container .info {
+    width: 100%;
+  }
+  .about-us .container .info .details {
+    padding: 0;
+    text-align: center;
+  }
+  .about-us .container .map-cta {
+    width: 100%;
+  }
+  .about-us .container .subhead {
+    text-align: center;
+  }
+  .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .footer .container .opening-hours-cta {
+    margin-top: 2em;
+  }
+  .footer .container .contacts {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  body {
+    font-size: .6rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  :root {
+    --white-space-em: 2em;
+  }
+  body {
+    font-size: .55rem;
+  }
+  .about-us .subhead {
+    margin-bottom: .2em;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  :root {
+    --white-space-em: 1.4em;
+  }
+  body {
+    text-align: center;
+  }
+  .navbar li {
+    display: none;
+  }
+  .hero .container {
+    width: 100%;
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .about-us .container .info .details {
+    padding: 0;
+  }
+  .about-us .subhead {
+    margin-bottom: .2em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

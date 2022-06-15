@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --dark-color: #0C0915;
+    --primary-color: #3B265E;
+    --secondary-color: #4E8D85;
+    --light-color: #A4B6A4;
+    --lightest-color: #ECE6AF;
+
+}
+
+body {
+    background-color: var(--dark-color);
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+a, li, h1, p {
+    color: var(--lightest-color);
+    text-decoration: none;
+    margin: 0;
+}
+
+ul {
+    display: inline;
+}
+li {
+    display: inline;
+    list-style-type: none;
+}
+.navbar {
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 6.5rem;
+        margin: 1.3rem 0;
+    }
+    .logo {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    li {
+        font-size: 1.2rem;
+        margin-left: 3rem;
+        
+        a{
+            color: var(--secondary-color);
+        }
+
+        a:hover {
+            color: var(--light-color);
+        }
+    }
+}
+
+.hero {
+    width: 100%;
+    min-height: 705px;
+    background: url("../images/hero-design.svg") no-repeat;
+
+    .container {
+        margin-left: 6.5rem;
+        padding-top: 19rem;
+      
+    }
+    h1 {
+        font-weight: bold;
+        font-size: 4.525em;
+        color: var(--light-color);
+        margin-bottom: 1.5rem;
+    }
+
+    a {
+        font-size: 2em;
+        font-weight: bold;
+        border-radius: 8px;
+        padding: .2em .5em;
+        color: var(--light-color);
+        background-color: var(--dark-color);
+    }
+
+    a:hover {
+        color: var(--dark-color);
+        background-color: var(--light-color);
+    }
+}
+
+.courses {
+    background-color: var(--primary-color);
+    margin-top: 6.5rem;
+    .container {
+        padding: 3rem 6.5rem;
+        display: flex;
+    }
+    .left {
+        flex: 1;
+        .subhead {
+            color: var(--secondary-color);
+            font-size: 1.75em;
+            margin-bottom: .2rem;
+        }
+        h1 {
+            color: var(--light-color);
+            font-size: 3.75em;
+            font-weight: bold;
+            margin-bottom: 1.2rem;
+        }
+        .details {
+            color: var(--light-color);
+            font-size: 2em;
+            word-wrap: break-word;
+            width: 90%;
+        }
+    }
+    
+    .right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .map-cta {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+.team {
+    width: 100%;
+    overflow: hidden;
+    .subhead {
+        color: var(--secondary-color);
+        font-weight: bold;
+        font-size: 2.67em;
+        padding-left: 6.5rem;
+        padding-top: 6.5rem;
+    }
+    .member-cta { 
+        display: flex;
+        width: 100%;
+        padding-top: 6.5rem;
+    }
+    .person-info {
+        flex: 1;
+        h1 {
+            color: var(--light-color);
+            font-weight: bold;
+            font-size: 3.9em;
+            margin-bottom: 1rem;
+        }
+        .details {
+            color: var(--light-color);
+            font-size: 2em;
+        }
+    }
+    .photo {
+        flex: 1;
+        img {
+            max-width: 90%;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .member-cta-right {
+        margin-left: 6.5em;
+        .photo {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    .member-cta-left {
+        margin-right: 6.5em;
+        flex-direction: row-reverse;
+        .photo {
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+}
+
+.footer {
+    background-color: var(--primary-color);
+    .container {
+        padding-left: 6.5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        margin-top: 5rem;
+    }
+    .subhead {
+        color: var(--secondary-color);
+        font-weight: bold;
+        font-size: 2.67em;
+        margin-bottom: 2rem;
+    }
+    .contact-info {
+        display: flex;
+        font-weight: bold;
+        font-size: 1.7em;
+        p {
+            margin-right: 6.5rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1360px) {
+
+    body {
+        font-size: .8rem;
+    }
+    .team {
+        
+        .member-cta {
+            margin: 0;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        .person-info {
+            margin: 0;
+            padding: 6.5rem;
+            text-align: center;
+        }
+
+        .photo {
+            width: 100%;
+        }
+
+        .member-cta-right {
+            .photo {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    
+        .member-cta-left {
+            .photo {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    
+}
+
+@media only screen and (max-width: 940px) {
+    .footer {
+        .contact-info {
+            flex-direction: column;
+            p {
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        font-size: .7rem;
+    }
+
+    .navbar {
+
+        .container {
+            justify-content: center;
+        }
+
+        ul {
+            display: none;
+        }
+    }
+
+    .courses {
+        .container {
+            flex-direction: column;
+            text-align: center;
+            padding: 0;
+            
+        }
+        .details {
+            display: none;
+        }
+        .left {
+            padding: 2rem 0;
+        }
+        .map-cta {
+            width: 100%;
+            height: 40vh;
+            padding: 5%;
+        }
+    }
+
+    .team {
+        text-align: center;
+        .subhead {
+            padding-left: 0;
+        }
+    }
+}

@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --dark-color: #0C0915;
+  --primary-color: #3B265E;
+  --secondary-color: #4E8D85;
+  --light-color: #A4B6A4;
+  --lightest-color: #ECE6AF;
+}
+
+body {
+  background-color: var(--dark-color);
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a, li, h1, p {
+  color: var(--lightest-color);
+  text-decoration: none;
+  margin: 0;
+}
+
+ul {
+  display: inline;
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+}
+
+.navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 6.5rem;
+  margin: 1.3rem 0;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.navbar li {
+  font-size: 1.2rem;
+  margin-left: 3rem;
+}
+
+.navbar li a {
+  color: var(--secondary-color);
+}
+
+.navbar li a:hover {
+  color: var(--light-color);
+}
+
+.hero {
+  width: 100%;
+  min-height: 705px;
+  background: url("../images/hero-design.svg") no-repeat;
+}
+
+.hero .container {
+  margin-left: 6.5rem;
+  padding-top: 19rem;
+}
+
+.hero h1 {
+  font-weight: bold;
+  font-size: 4.525em;
+  color: var(--light-color);
+  margin-bottom: 1.5rem;
+}
+
+.hero a {
+  font-size: 2em;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: .2em .5em;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+}
+
+.hero a:hover {
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+
+.courses {
+  background-color: var(--primary-color);
+  margin-top: 6.5rem;
+}
+
+.courses .container {
+  padding: 3rem 6.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.courses .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.courses .left .subhead {
+  color: var(--secondary-color);
+  font-size: 1.75em;
+  margin-bottom: .2rem;
+}
+
+.courses .left h1 {
+  color: var(--light-color);
+  font-size: 3.75em;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+}
+
+.courses .left .details {
+  color: var(--light-color);
+  font-size: 2em;
+  word-wrap: break-word;
+  width: 90%;
+}
+
+.courses .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.courses .map-cta {
+  width: 90%;
+  height: 90%;
+}
+
+.team {
+  width: 100%;
+  overflow: hidden;
+}
+
+.team .subhead {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 2.67em;
+  padding-left: 6.5rem;
+  padding-top: 6.5rem;
+}
+
+.team .member-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-top: 6.5rem;
+}
+
+.team .person-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.team .person-info h1 {
+  color: var(--light-color);
+  font-weight: bold;
+  font-size: 3.9em;
+  margin-bottom: 1rem;
+}
+
+.team .person-info .details {
+  color: var(--light-color);
+  font-size: 2em;
+}
+
+.team .photo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.team .photo img {
+  max-width: 90%;
+  width: auto;
+  height: auto;
+}
+
+.team .member-cta-right {
+  margin-left: 6.5em;
+}
+
+.team .member-cta-right .photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.team .member-cta-left {
+  margin-right: 6.5em;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.team .member-cta-left .photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer {
+  background-color: var(--primary-color);
+}
+
+.footer .container {
+  padding-left: 6.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  margin-top: 5rem;
+}
+
+.footer .subhead {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 2.67em;
+  margin-bottom: 2rem;
+}
+
+.footer .contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
+.footer .contact-info p {
+  margin-right: 6.5rem;
+}
+
+@media only screen and (max-width: 1360px) {
+  body {
+    font-size: .8rem;
+  }
+  .team .member-cta {
+    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .team .person-info {
+    margin: 0;
+    padding: 6.5rem;
+    text-align: center;
+  }
+  .team .photo {
+    width: 100%;
+  }
+  .team .member-cta-right .photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .team .member-cta-left .photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .footer .contact-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .contact-info p {
+    margin-bottom: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    font-size: .7rem;
+  }
+  .navbar .container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .courses .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 0;
+  }
+  .courses .details {
+    display: none;
+  }
+  .courses .left {
+    padding: 2rem 0;
+  }
+  .courses .map-cta {
+    width: 100%;
+    height: 40vh;
+    padding: 5%;
+  }
+  .team {
+    text-align: center;
+  }
+  .team .subhead {
+    padding-left: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
