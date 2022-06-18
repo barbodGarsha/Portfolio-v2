@@ -30,6 +30,8 @@ li {
   border: 1px #F67280 solid;
   border-radius: 8px;
   padding: .4rem .8rem;
+  -webkit-transition: 120ms;
+  transition: 120ms;
 }
 
 .button .button__txt {

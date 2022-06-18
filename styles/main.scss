@@ -36,6 +36,7 @@ li {
     .button__txt {
         color: $c-secondary-500;
     }
+    transition: 120ms;
 }
 .button:hover {
     background-color: $c-secondary-500;
