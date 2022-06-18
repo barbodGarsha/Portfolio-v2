@@ -123,6 +123,7 @@ li {
                 position: relative;
                 width: 33rem;
                 z-index: 2;
+                transition: 300ms;
             }
             
             .hero__design__img-shadow {
@@ -133,6 +134,7 @@ li {
                 bottom: -.7rem;
                 right: -.7rem;
                 z-index: 1;
+                transition: 300ms;
             }
 
             .hero__design-lines {
@@ -140,6 +142,24 @@ li {
                 width: 30%;
                 left: -1.2rem;
                 top: -1rem;
+                transition: 300ms;
+            }
+        }
+        .hero__design:hover {
+            .hero__design__img {
+                width: 33.5rem;
+            }
+            .hero__design__img-shadow { 
+                background-color: $c-secondary-700;
+                bottom: -.9rem;
+                right: -.9rem;
+            }
+
+            .hero__design-lines {
+                position: absolute;
+                width: 30%;
+                left: -1.4rem;
+                top: -1.2rem;
             }
         }
     }
@@ -182,7 +202,12 @@ li {
                     .workflow__design-row__item {
                         color: $c-primary-500;
                         font-size: 1.2rem;
+                        transition: 300ms;
                     }
+                    .workflow__design-row__item:hover {
+                        transform: scale(1.15);
+                    }
+
                     .workflow__design-row__item--color-secondary {
                         color: $c-secondary-500;
                     } 

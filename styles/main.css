@@ -158,6 +158,8 @@ li {
   position: relative;
   width: 33rem;
   z-index: 2;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .hero .hero__container .hero__design .hero__design__img-shadow {
@@ -168,6 +170,8 @@ li {
   bottom: -.7rem;
   right: -.7rem;
   z-index: 1;
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 
 .hero .hero__container .hero__design .hero__design-lines {
@@ -175,6 +179,25 @@ li {
   width: 30%;
   left: -1.2rem;
   top: -1rem;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.hero .hero__container .hero__design:hover .hero__design__img {
+  width: 33.5rem;
+}
+
+.hero .hero__container .hero__design:hover .hero__design__img-shadow {
+  background-color: #f45a6a;
+  bottom: -.9rem;
+  right: -.9rem;
+}
+
+.hero .hero__container .hero__design:hover .hero__design-lines {
+  position: absolute;
+  width: 30%;
+  left: -1.4rem;
+  top: -1.2rem;
 }
 
 .workflow {
@@ -242,6 +265,13 @@ li {
 .workflow .workflow__container .workflow__design .workflow__design__container .workflow__design-row .workflow__design-row__item {
   color: #F8B195;
   font-size: 1.2rem;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.workflow .workflow__container .workflow__design .workflow__design__container .workflow__design-row .workflow__design-row__item:hover {
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .workflow .workflow__container .workflow__design .workflow__design__container .workflow__design-row .workflow__design-row__item--color-secondary {
